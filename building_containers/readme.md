@@ -24,13 +24,13 @@ sudo nano index.html
 ```bash
 # login
 docker login -u YOUR-USER-NAME
-# name image
-docker tag <original_image> YOUR-USER-NAME/<original_image>
+# save container into image
+docker commit <container_id> <imagename>
 # push image
-docker push YOUR-USER-NAME/<original_image>
+docker push YOUR-USER-NAME/<imagename>
 ```
 ## Helpful commmands
 ```bash
-docker rmi <image_name> # add -f to force
+docker rmi <imagename> # add -f to force
 docker start <container_id>
 ```

@@ -18,7 +18,7 @@ The separation of functions within your deployment into different infrastucture.
 - Uses APIs
 - Docker client (our terminal)provides instruction (docker build pull run) to APIs
 - Docker host is docker desktop
-- Docker hub registry<br>
+- Docker hub registry is the remote storage for repositories<br>
 ![alt text](images/how_docker_works.png)
 ## image vs container
 Containers are running images, images are stopped containers. Just like instances and images
