@@ -7,19 +7,24 @@ The separation of functions within your deployment into different infrastucture.
 - Small (as many needed) 
 - Scalable (good for changing demands, monolith is for a known demand which doesn't change)
 - Works best for large scale deployments
-## Why not
+## Why not microservices
 - Not easy to manage
 - Costs more
 - Needs different teams
 ## Docker - building
 ## Why docker
 - Globally available images
-## how docker works
+- Not as secure
+## How docker works
 - Uses APIs
 - Docker client (our terminal)provides instruction (docker build pull run) to APIs
 - Docker host is docker desktop
 - Docker hub registry is the remote storage for repositories<br>
 ![alt text](images/how_docker_works.png)
-## image vs container
+## Image vs container
 Containers are running images, images are stopped containers. Just like instances and images
+## Read Replica
+![alt text](images/read_replica.png)
+- Makes data persistent
+- Prevents people changing data you have put out to the public
 ## K8 - managing and scaling K8
