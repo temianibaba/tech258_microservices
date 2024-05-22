@@ -4,3 +4,4 @@
 kubectl get service # gives information of system
 ```
 ![alt text](../images/servicek8.png)
+![alt text](../images/architecture.png)
