@@ -31,7 +31,8 @@ Containers are running images, images are stopped containers. Just like instance
 - Prevents people changing data you have put out to the public
 ## K8 - managing and scaling K8
 Docker doesn't have the capability to scale highly available with no point of faikure.
-- Self healing
+- Self healing (as soon as one pod is deleted K8 creates a new one, uses labels to know which pod to deploy)<br>
+![alt text](images/selfhealing.png)
 - Scale in and out on demand
 - Eliminating single point of failure<br>
 ![alt text](images/architecture.png)
