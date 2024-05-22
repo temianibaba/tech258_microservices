@@ -1,12 +1,12 @@
 ---
-apiVersion: app/v1 # which api to use for deployment
+apiVersion: apps/v1 # which api to use for deployment
 kind: Deployment # pod - service what kind of service you wnat
 
 metadata:
   name: nginx-deployment
 spec:
-  selector:
-    matchLabels:
+  selector: #go into this
+    matchLabels: # go into this
       app: nginx # look for this label to match with k8
       # Replica set of this with pods
   replicas: 3

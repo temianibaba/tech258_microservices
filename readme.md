@@ -11,6 +11,8 @@ The separation of functions within your deployment into different infrastucture.
 - Not easy to manage
 - Costs more
 - Needs different teams
+## Virtualisation vs Containerisation
+Virtualization lets you run multiple operating systems on the same physical server, whereas containerization enables you to deploy multiple applications or microservices on the same operating system without any hardware abstraction.
 ## Docker - building
 ## Why docker
 - Globally available images
@@ -28,3 +30,7 @@ Containers are running images, images are stopped containers. Just like instance
 - Makes data persistent
 - Prevents people changing data you have put out to the public
 ## K8 - managing and scaling K8
+Docker doesn't have the capability to scale highly available with no point of faikure.
+- Self healing
+- Scale in and out on demand
+- Eliminating single point of failure
