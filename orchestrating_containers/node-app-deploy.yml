@@ -3,22 +3,22 @@ apiVersion: apps/v1 # which api to use for deployment
 kind: Deployment # pod - service what kind of service you wnat
 
 metadata:
-  name: nginx-deployment
+  name: node-app-deployment
 spec:
   selector: #go into this
     matchLabels: # go into this
-      app: nginx # look for this label to match with k8
+      app: nodeapp # look for this label to match with k8
       # Replica set of this with pods
-  replicas: 5
+  replicas: 2
   # template to use it's label for k8 service to launch in browser
   template:
     metadata: 
       labels:
-        app: nginx
+        app: nodeapp
     
     spec:
       containers:
-      - name: nginx
-        image: muyisanibaba/nginx
+      - name: nodeapp
+        image: muyisanibaba/nodejs-app
         ports:
-        - containerPort: 80
+        - containerPort: 3000

@@ -30,6 +30,7 @@ Containers are running images, images are stopped containers. Just like instance
 - Makes data persistent
 - Prevents people changing data you have put out to the public
 ## K8 - managing and scaling K8
+![alt text](images/full_deployment.png)<br>
 Docker doesn't have the capability to scale highly available with no point of faikure.
 - Self healing (as soon as one pod is deleted K8 creates a new one, uses labels to know which pod to deploy)<br>
 ![alt text](images/selfhealing.png)
