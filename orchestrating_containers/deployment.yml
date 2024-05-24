@@ -69,7 +69,8 @@ spec:
         - containerPort: 3000
         env:
           - name: DB_HOST
-            value: mongodb://10.104.66.172/posts
+            value: mongodb://mongo-svc/posts
+        #command: ["node", "seeds/seed.js"]
 ---
 # Select type of API and type of service
 apiVersion: v1
