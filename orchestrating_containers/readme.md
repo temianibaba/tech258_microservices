@@ -20,6 +20,8 @@ Adding more pods
 ```bash
 kubectl delete deploy nginx-deployment
 kubectl delete svc nginx-svc
+kubectl edit <deploymentname>
+kubectl get all
 ```
 
 ## Deploying app on K8
@@ -79,6 +81,3 @@ spec:
 4. `kubectl create -f node-app-service.yml`
 5. check with localhost:30001
 
-
-![alt text](image.png)
-![alt text](image-1.png)

@@ -25,3 +25,6 @@ spec:
         env:
           - name: DB_HOST
             value: mongodb://10.104.66.172/posts
+# kubectl exec pod-name env node seeds/seed.js
+# pod name: mongo-deployment-68b8fb9744-c7w4v
+# kubectl exec node-app-deployment-674b759ccf-bcqhx env node seeds/seed.js
