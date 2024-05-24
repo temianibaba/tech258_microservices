@@ -78,3 +78,7 @@ spec:
 3. `kubectl create -f node-app-deploy.yml`
 4. `kubectl create -f node-app-service.yml`
 5. check with localhost:30001
+
+
+![alt text](image.png)
+![alt text](image-1.png)
