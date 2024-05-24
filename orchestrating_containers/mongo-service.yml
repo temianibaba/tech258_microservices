@@ -1,0 +1,21 @@
+---
+# Select type of API and type of service
+apiVersion: v1
+kind: Service
+# Meta data for name
+metadata:
+  name: mongo-svc
+  namespace: default # sre
+# Spec to include ports selector to connect to the deployment
+spec:
+  ports:
+  - nodePort: 30001 # range is 30000-32768
+    port: 27017
+    targetPort: 27017
+
+# Lets define the selector and label to connect to nginx deploy
+  selector:
+    app: mongo # this label connects service to deployment
+  
+
+  type: NodePort # there is clusterIP Node port and loadbalancer

@@ -3,25 +3,22 @@ apiVersion: apps/v1 # which api to use for deployment
 kind: Deployment # pod - service what kind of service you wnat
 
 metadata:
-  name: node-app-deployment
+  name: mongo-deployment
 spec:
   selector: #go into this
     matchLabels: # go into this
-      app: nodeapp # look for this label to match with k8
+      app: mongo # look for this label to match with k8
       # Replica set of this with pods
   replicas: 2
   # template to use it's label for k8 service to launch in browser
   template:
     metadata: 
       labels:
-        app: nodeapp
+        app: mongo
     
     spec:
       containers:
-      - name: nodeapp
-        image: muyisanibaba/nodejs-app
+      - name: mongo
+        image: muyisanibaba/mongo-db
         ports:
-        - containerPort: 3000
-        env:
-          - name: DB_HOST
-            value: mongodb://10.104.66.172/posts
+        - containerPort: 27017

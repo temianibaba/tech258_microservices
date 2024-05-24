@@ -9,7 +9,7 @@ spec:
     matchLabels: # go into this
       app: nginx # look for this label to match with k8
       # Replica set of this with pods
-  replicas: 5
+  replicas: 2
   # template to use it's label for k8 service to launch in browser
   template:
     metadata: 
