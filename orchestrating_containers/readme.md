@@ -22,6 +22,10 @@ kubectl delete deploy nginx-deployment
 kubectl delete svc nginx-svc
 kubectl edit <deploymentname>
 kubectl get all
+# Change bindip
+# command:
+# - "- bind_ip"
+# - "0.0.0.0"
 ```
 
 ## Deploying app on K8
@@ -81,3 +85,4 @@ spec:
 4. `kubectl create -f node-app-service.yml`
 5. check with localhost:30001
 
+![alt text](../images/resource_mapping.png)
